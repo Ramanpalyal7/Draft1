@@ -15,97 +15,97 @@ int main()
     cout<<"9 for Net Salary"<<endl;
     cout<<"10 root of quadratic equation"<<endl;
     cin>>n;
-    if(n=1)
+    if(n==1)
     {  int b,h;
     float a;
-      a=(b*h)/2;
-      cout<<"What is the value of Base and Height";
+      cout<<"What is the value of Base and Height ";
       cin>>b>>h;
+      a=(b*h)/2;
       cout<<"The Area of Triangle is "<<a<<endl;
       
     }
-    else if(n=2)
+    else if(n==2)
     { 
         int l,b;
     float p;
-        p=2*(l+b);
-        cout<<"What is the length and breadth of Rectangle";
+        cout<<"What is the length and breadth of Rectangle ";
         cin>>l>>b;
+        p=2*(l+b);
         cout<<"The Perimeter of Rectangle is"<<p<<endl;
         
     }
 
-    else if(n=3)
+    else if(n==3)
     {
             int n;
     float s;
-      s=n*(n+1)/2;
-      cout<<"Write the number of terms";
+      cout<<"Write the number of terms ";
       cin>>n;
+      s=n*(n+1)/2;
       cout<<"The Sum of n terms is"<<s<<endl;
      
     }
    
-    else if(n=4)
+    else if(n==4)
     {
          int a,t,n,d;
-        t=a+(n-1)*d;
-        cout<<"Write the First term of A.P"<<endl;
+        cout<<"Write the First term of A.P "<<endl;
         cin>>a;
-        cout<<"Write the total number of terms with common difference";
+        cout<<"Write the total number of terms with common difference ";
         cin>>n>>d;
+        t=a+(n-1)*d;
         cout<<"Therefore the nth term of A.P is "<<t<<endl;
     }
     
-    else if(n=5)
+    else if(n==5)
     { 
         int v,u,a;
     float s;
-        s=(v*v)-(u*u)/(2*a);
-        cout<<"What is the intial velocity and final velocity of vehicle with difference it cover"<<endl;
+        cout<<"What is the intial velocity and final velocity of vehicle with difference it cover "<<endl;
         cin>>u>>v>>a;
+        s=(v*v)-(u*u)/(2*a);
         cout<<"The Speed of Vehicle is "<<s<<endl;
         
     }
    
-    else if(n=6)
+    else if(n==6)
     {
          int p;
     float t,r,s;
+        cout<<"What is the Principle Amount you get and how much rate of interest over it with time period ";
+        cin>>p>>r>>t;
         s=(p*t*r)/100;
-        cout<<"What is the Principle Amount you get and how much rate of interest over it with time period";
-        cin>>s>>r>>t;
         cout<<"The Simple Interest is "<<s<<endl;
     }
     
-    else if(n=7)
+    else if(n==7)
     {
         int r,h;
     float v;
-        v=3.14*r*r*h;
-        cout<<"Enter the radius and height of Cylinder";
+        cout<<"Enter the radius and height of Cylinder ";
         cin>>r>>h;
+        v=3.14*r*r*h;
         cout<<"The Volume of Cylinder"<<v<<endl;
 
     }
     
-    else if(n=8)
+    else if(n==8)
     {
         int x1,x2,y1,y2;
     float d;
-     d=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
-     cout<<"Write the value of x1,x2 and y1,y2"<<endl;
+     cout<<"Write the value of x1,x2 and y1,y2 "<<endl;
      cin>>x1>>x2>>y1>>y2;
+     d=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
      cout<<"The Distance between two points is "<<d<<endl;
 
     }
     
-    else if(n=9)
+    else if(n==9)
     {
         float net ,b,a,d;
-        net=b+(b*a/100)-(b*d/100);
-        cout<<"What is your basic pay and write the allowance you get and also deduction on your salary"<<endl;
+        cout<<"What is your basic pay and write the allowance you get and also deduction on your salary "<<endl;
         cin>>b>>a>>d;
+        net=b+(b*a/100)-(b*d/100);
         cout<<"You have Net SAlARY of "<<net<<endl;
 
     }
@@ -114,10 +114,10 @@ int main()
     {
          int b,a,c;
     float r1,r2;
+        cout<<"Write the value of a,b,c "<<endl;
+        cin>>a>>b>>c;
         r1=(-b+sqrt(b*b-(4*a*c))/(2*a));
         r2=(-b-sqrt(b*b-(4*a*c))/(2*a));
-        cout<<"Write the value of a,b,c"<<endl;
-        cin>>a>>b>>c;
         cout<<"The Roots are "<<r1<<"  "<<r2;
       return 0;
     }
